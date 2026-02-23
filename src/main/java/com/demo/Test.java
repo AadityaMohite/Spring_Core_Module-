@@ -1,42 +1,39 @@
-package com.service;
+package com.aadi;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 
 public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		ApplicationContext context =  new ClassPathXmlApplicationContext("aadi.xml");
+		
+//		
+		Car c1 = context.getBean("c1",Car.class);
+		c1.journey();
+		
+		System.out.println(c1.hashCode());
+		
+		Car c2 = context.getBean("c2",Car.class);
+		
+		System.out.println(c2.hashCode());
+		
+		PetrolEngine engine = context.getBean(PetrolEngine.class);
+		
+		  engine.start();
+		  
+//		  Car c3 = context.getBean("c1",Car.class);
+//		  System.out.println(c3.hashCode());
+//		  
+//		  
+//		  Car c4 = context.getBean("c2",Car.class);
+//		  System.out.println(c4.hashCode());
+	}
 	
 	
-	
-public static void main(String[] args) {
-	
-//	UPIPayment upiPayment = new UPIPayment();
-//	CreditCardPayment creditCardPayment = new CreditCardPayment(); 
-//	PaymentService service = new PaymentService(upiPayment);              /// this is Constructor level  dependency Injection
-//	PaymentService service2 = new PaymentService(creditCardPayment);
-	
-//	CreditCardPayment credit = new CreditCardPayment();
-//	DebitCardPayment debit = new DebitCardPayment(); 
-	PaymentService service = new PaymentService();
-	
-	
-//     service.setPayment(new UPIPayment());  // setter Level Dependency Injection 
-//     service.setPayment(new CreditCardPayment());   // Setter level Dependency Injection
-//     service.setPayment(new DebitCardPayment()); // Setter level Dependency injection
-	
-	
-//	service.upi = new UPIPayment();  // field Dependency
-//	service.credit = new CreditCardPayment();
-//	service.debit = new DebitCardPayment();
-	
-//	service.payment = new UPIPayment();
-//	service.payment = new CreditCardPayment();
-//	service.payment = new DebitCardPayment();
-	service.doPayment(30000);
-//	IPayment payment2 = new CreditCardPayment();
-//	IPayment payment3 = new DebitCardPayment();
-	
-	
-//	service.doPayment(30000);
-	
-	
-}
 	
 	
 }
