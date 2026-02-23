@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+   <!--      <bean class="com.service.Car">
+        
+         <constructor-arg ref="petrol"> </constructor-arg> 
+     
+     
+        <constructor-arg ref="petrol"></constructor-arg>
+        
+        <property name="Engine" ref="diseal"></property>
+        
+        
+        
+        </bean> --> 
+        
+       
+         <bean class="com.service.Car" autowire="constructor">
+        
+        
+        
+        
+        
+        </bean>
+        
+        
+        
+        <bean id="petrol" class="com.service.PetrolEngine" ></bean>
+        
+        <bean id="engine" class="com.service.DisealEngine" primary="true"></bean>
+        
+        
+        
+</beans>
