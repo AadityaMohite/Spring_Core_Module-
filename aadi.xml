@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="c1" class="com.aadi.Car" scope="prototype"></bean>
+    <bean id="c2" class="com.aadi.Car"></bean>
+  
+ <bean id="s1" class="com.aadi.Student">
+ 
+ <property name="id" value="101"></property>
+ <property name="name" value="Aaditya"></property>
+ <property name="Address" value="Mumbai"></property>
+ 
+
+ </bean>
+ <bean id="s2" class="com.aadi.Student">
+ <property name="id" value="102"></property>
+ <property name="name" value="Shyam"></property>
+ <property name="Address" value="Pune"></property>
+ 
+ </bean>
+ <bean id="s3" class="com.aadi.Student">
+ <property name="id" value="103"></property>
+ <property name="name" value="Rakesh"></property>
+ <property name="Address" value="Chennai"></property>
+ 
+ <property name="subject">
+ <array>
+ 
+ <value>Java</value>
+ <value>Python</value>
+ <value>C++</value>
+ <value>.Net</value>
+ <value>JavaScript</value>
+ 
+ 
+ 
+ </array>
+ 
+ 
+ 
+ </property>
+ 
+ 
+ <property name="skills">
+ 
+ <list>
+  <value>Communication</value>
+  <value>HardWorking</value>
+  <value>LeaderShip</value>
+  <value>Multitasking</value>
+  <value>Attitude</value>
+ </list>
+ 
+ 
+ 
+ 
+ </property>
+ 
+ 
+ </bean>
+ 
+ <bean id="e1" class="com.aadi.Employee">
+ 
+ <property name="id" value="101"></property>
+ <property name="name" value="Aaditya"></property>
+ <property name="dep" value="IT"></property>
+ <property name="Skill">
+ <array>
+ <value>hardworking</value>
+ <value>Communication</value>
+ <value>Leadership</value>
+ <value>Quick learner</value>
+ <value>Multitasking</value>
+ </array>
+ 
+ 
+ 
+ 
+ </property>
+ <property name="Roles">
+ 
+ <list>
+ <value>testing</value>
+ <value>devloper</value>
+ <value>Software engineer</value>
+ <value>Senior devloper</value>
+ 
+ 
+ </list>
+ 
+ 
+ 
+ 
+ </property>
+ 
+ 
+ 
+ </bean>
+ 
+ <bean id="e2" class="com.aadi.Employee">
+ 
+ <property name="id" value="102"></property>
+ <property name="name" value="Aaryan"></property>
+ <property name="dep" value="mechanical"></property>
+ <property name="Skill">
+ <array>
+ <value>hardworking</value>
+ <value>Communication</value>
+ <value>Leadership</value>
+ <value>Quick learner</value>
+ <value>Multitasking</value>
+ </array>
+ 
+ 
+ 
+ 
+ </property>
+ <property name="Roles">
+ 
+ <list>
+ <value>testing</value>
+ <value>devloper</value>
+ <value>Software engineer</value>
+ <value>Senior devloper</value>
+ 
+ 
+ </list>
+ 
+ 
+ 
+ 
+ </property>
+ 
+ 
+ 
+ </bean>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<bean class="com.aadi.PetrolEngine"
+></bean>
+</beans>
